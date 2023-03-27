@@ -5,28 +5,28 @@ class Program {
     string tempstr ="";
     int tempint = -1;
     
-    Console.WriteLine("Choose your Fizz");
+    Console.WriteLine("Choose your first word or press enter for Fizz");
     tempstr = Console.ReadLine();
     if(string.IsNullOrEmpty(tempstr)){ //Fizz is default
       tempstr = "Fizz";
     }
     fizz = tempstr;
 
-    Console.WriteLine("Choose your Buzz");
+    Console.WriteLine("Choose your second word or press enter for Buzz");
     tempstr = Console.ReadLine();
     if(string.IsNullOrEmpty(tempstr)){ //Buzz is default
       tempstr = "Buzz";
     }
     buzz = tempstr;
 
-    Console.WriteLine("Choose your multiples for {0}", fizz);
+    Console.WriteLine("Choose your multiples for {0} or press enter for 3", fizz);
     tempstr = Console.ReadLine();
     if(!int.TryParse(tempstr, out tempint)){ //3 is default
       tempint = 3;
     }
     firstMult = tempint;
 
-    Console.WriteLine("Choose your multiples for {0}", buzz);
+    Console.WriteLine("Choose your multiples for {0} or press enter for 5", buzz);
     tempstr = Console.ReadLine();
     if(!int.TryParse(tempstr, out tempint)){
       tempint = 5;
